@@ -1,0 +1,121 @@
+% ========================================================
+% RELATÓRIO DE ATIVIDADES DE BOLSISTA - UFSM/CCNE
+% Template Oficial - Unidade de Apoio Pedagógico
+% ========================================================
+%
+% CARACTERÍSTICAS:
+% - Formato A4 com margens institucionais
+% - Layout otimizado para preenchimento manual/digital
+% - Compatível com compiladores padrão (PDFLaTeX, XeLaTeX)
+%
+% VERSÃO: 2.1
+% DATA: 30 de Abril de 2025
+% ELABORADO POR: Gabriel da Rosa Tondolo
+% https://github.com/Gabs-vhd
+% 
+%
+% LICENÇA: Creative Commons CC-BY 4.0
+% (Uso livre com atribuição à instituição)
+%
+% ATUALIZAÇÕES:
+% - v2.1: Ajuste de alinhamento das linhas verticais
+% - v2.0: Adição de campos obrigatórios
+% - v1.0: Versão inicial
+%
+% ========================================================
+% INÍCIO DO DOCUMENTO
+% ========================================================
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[a4paper, top=2cm, bottom=2.5cm, left=3cm, right=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{titling}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tabularx}
+\usepackage{times}
+
+\setlength{\droptitle}{-5em} % mais próximo do topo
+\renewcommand{\maketitle}{
+  \begin{center}
+    \large MINISTÉRIO DA EDUCAÇÃO\\
+    \normalsize UNIVERSIDADE FEDERAL DE SANTA MARIA\\
+    \normalsize CENTRO DE CIÊNCIAS NATURAIS E EXATAS\\
+    \normalsize UNIDADE DE APOIO PEDAGÓGICO
+    \vspace{1em}
+    \hrule % Linha horizontal adicionada aqui
+  \end{center}
+  \vspace{-0.55em}
+}
+
+\begin{document}
+
+\maketitle
+
+% ---------- Tabela com título incluído ----------
+\noindent
+\begin{tabularx}{\textwidth}{|>{\hsize=\dimexpr1.02\hsize\relax}X|>{\hsize=\dimexpr0.98\hsize\relax}X|}
+\rowcolor{lightgray}
+\multicolumn{2}{|l|}{\textbf{RELATÓRIO DE ATIVIDADE}} \\
+\hline
+\textbf{INFORMAÇÕES GERAIS} & \textbf{PERÍODO:} \\
+\hline
+Nome do bolsista: Meu Nome Aqui & Matrícula: 1234567 \\
+\hline
+Curso: Engenharia de Meu Curso & E-mail: meuemail@email.com.br \\
+\hline
+\multicolumn{2}{|l|}{Área de atuação: Minha Atuação} \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Disciplinas cursadas neste semestre:}} \\
+\hline
+\multicolumn{2}{|l|}{\parbox[t][1.5cm][t]{\dimexpr\textwidth-2\tabcolsep-2\arrayrulewidth\relax}{\vspace{1mm}disciplina1, disciplina2, disciplina3, disciplina4\vspace{0.2cm}}} \\
+\hline
+\multicolumn{2}{|l|}{Permanência na Central de Tutoria: (X) Sim \hspace{1cm} ( ) Não} \\
+\hline
+\multicolumn{2}{|l|}{Modalidade da bolsa: 
+(X) BAE - Recursos Próprios da Unidade \hspace{0.5cm} 
+( ) BAE - PRAE} \\
+\hline
+\end{tabularx}
+
+\vspace{1em}
+\noindent\textbf{SETOR DE APOIO PEDAGÓGICO}
+
+\vspace{1em}
+
+% ---------- Relatório das Atividades ----------
+\noindent
+\begin{tabularx}{\textwidth}{|X|}
+\hline
+\rowcolor{lightgray}
+\textbf{RELATÓRIO DAS ATIVIDADES DO BOLSISTA} \\
+\hline
+\parbox[t][15em]{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth\relax}{\vspace{0.1cm}Cuidado para mexer nas funções acima, elas não deixam a tabela ir para as cucuias. Se precisar de mais espaço, o 15em entre colchetes logo acima regula a altura dessa box
+
+\vfill} \\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+% ---------- Rodapé com Local/Data e Assinaturas ----------
+\noindent
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\rowcolor{lightgray}
+\textbf{Local:} Santa Maria/RS & \textbf{Data:} \today \\
+\hline
+\multicolumn{1}{|c}{\includegraphics[width=5cm]{assinatura.png}} & \\
+\hline
+\multicolumn{1}{|c}{\textbf{Assinatura do bolsista}} & \multicolumn{1}{c|}{\textbf{Assinatura do orientador}} \\
+\hline
+\end{tabularx}
+
+\end{document}
+
+
